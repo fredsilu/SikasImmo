@@ -6,6 +6,7 @@ import { StyleSheet, View, Text, Image } from 'react-native'
 
 class HouseItem extends React.Component {
   render() {
+    console.log(this.props)
     const house = this.props.house
     return (
       <View style={styles.main_container}>

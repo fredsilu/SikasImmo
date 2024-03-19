@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { StyleSheet, View, Text, Image } from 'react-native'
+import { getImageFromApi } from '../API/TMDBApi'
 
 
 class HouseItem extends React.Component {
@@ -12,7 +13,8 @@ class HouseItem extends React.Component {
       <View style={styles.main_container}>
         <Image
           style={styles.image}
-          source={{uri: "image"}}
+          source={{uri: getImageFromApi(house.poster_path)}}
+
         />
         <View style={styles.content_container}>
 
